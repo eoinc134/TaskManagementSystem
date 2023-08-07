@@ -25,8 +25,3 @@ list1.addTask(task3)
 
 ## Print List ##
 userDashboard.printLists()
-
-## Remove List ##
-userDashboard.removeList(list1)
-
-userDashboard.printLists()

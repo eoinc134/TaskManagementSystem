@@ -9,9 +9,9 @@ userDashboard = Dashboard()
 userDashboard.createList('Gym Routine')
 
 ## Create Tasks ##
-task1 = Task("Chest", "Bench, Incline", "06/08/23", TaskStatus.COMPLETE)
-task2 = Task("Back", "Rows, Lat Pulldown", "07/08/23", TaskStatus.IN_PROGRESS)
-task3 = Task("Legs", "Squat, Lunges", "08/08/23", TaskStatus.TO_DO)
+task1 = Task("Chest", "Bench, Incline", "2023-08-06", TaskStatus.COMPLETE)
+task2 = Task("Back", "Rows, Lat Pulldown", "2023-08-07", TaskStatus.IN_PROGRESS)
+task3 = Task("Legs", "Squat, Lunges", "2023-08-08", TaskStatus.TO_DO)
 
 ## Get Lists ##
 lists = userDashboard.returnLists()

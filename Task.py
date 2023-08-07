@@ -1,7 +1,7 @@
 import datetime
 from enum import Enum
 
-date_format = '%d/%m/%y'
+date_format = '%Y-%m-%d'
 
 class TaskStatus(Enum):
     TO_DO = 'To Do'
@@ -43,10 +43,10 @@ class Task:
     
     def validate_date(self, date_str):
         try:
-            datetime.datetime.strptime(date_str, date_format)
-            return date_str
+            date_obj = datetime.datetime.strptime(date_str, date_format)
+            return date_obj.date()
         except ValueError:
-            raise ValueError("Invalid date format. Date should be in 'DD/MM/YY' format.")
+            raise ValueError("Invalid date format. Date should be in 'YYYY-MM-DD' format.")
     
     def printTask(self):
         print(f"Task: {self.name}")

@@ -1,5 +1,4 @@
 from Dashboard import Dashboard
-from ToDoList import ToDoList
 from Task import Task, TaskStatus
 
 ## Create Dashboard #

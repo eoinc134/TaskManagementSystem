@@ -1,5 +1,4 @@
 from Dashboard import Dashboard
-from ToDoList import ToDoList
 from Task import Task, TaskStatus
 
 ## Create Dashboard #
@@ -24,9 +23,4 @@ list1.addTask(task3)
 
 
 ## Print List ##
-userDashboard.printLists()
-
-## Remove List ##
-userDashboard.removeList(list1)
-
 userDashboard.printLists()

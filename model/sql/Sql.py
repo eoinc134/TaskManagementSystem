@@ -1,3 +1,4 @@
+import datetime
 import pypyodbc as odbc
 
 DRIVER_NAME = 'SQL SERVER'
@@ -6,7 +7,7 @@ DATABASE_NAME = 'TaskManagementSystem'
 
 class Sql:
     def __init__(self):
-        self.cnxn = odbc.conect(f"""
+        self.cnxn = odbc.connect(f"""
             DRIVER={{{DRIVER_NAME}}};
             SERVER={SERVER_NAME};
             DATABASE={DATABASE_NAME};

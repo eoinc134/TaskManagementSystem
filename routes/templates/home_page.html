@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Welcome to Tasker {% endblock %}</h1>
+    {% for list in lists %}
+        <a href="#">
+            <h2>{{ list['title'] }}</h2>
+        </a>
+        <hr>
+    {% endfor %}
+{% endblock %}

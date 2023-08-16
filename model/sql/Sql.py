@@ -12,3 +12,9 @@ class Sql:
             DATABASE={DATABASE_NAME};
             Trust_Connection=yes;
         """)
+
+    def retrieve_all_emails():
+        pass
+
+    def get_user_password():
+        pass

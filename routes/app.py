@@ -53,7 +53,7 @@ def validateLogin():
 @app.route('/logout')
 def logout():
     session.clear()
-    return render_template('home_page.html')
+    return redirect('/')
 
 def get_db_connection():
     database = Sql()

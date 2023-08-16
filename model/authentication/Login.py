@@ -1,5 +1,5 @@
 def emailExists(email):
-    return False
+    return True
 
 def verifyPassword(password):
     return True
